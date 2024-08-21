@@ -37,6 +37,8 @@ struct ContentView: View {
         } detail: {
             Text("Select an item")
         }
+        // これが広告表示用の関数
+        // AdMobBannerView()
     }
 
     private func addItem() {

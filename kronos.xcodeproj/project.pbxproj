@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3272EEB68D0633CE47D95425 /* Pods_kronosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D9E31801146F4EE6CA35AF /* Pods_kronosTests.framework */; };
 		72807AAE2C74B53500E35FE6 /* kronosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807AAD2C74B53500E35FE6 /* kronosApp.swift */; };
 		72807AB02C74B53500E35FE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807AAF2C74B53500E35FE6 /* ContentView.swift */; };
 		72807AB22C74B53500E35FE6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807AB12C74B53500E35FE6 /* Item.swift */; };
@@ -15,6 +16,9 @@
 		72807AC12C74B53700E35FE6 /* kronosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807AC02C74B53700E35FE6 /* kronosTests.swift */; };
 		72807ACB2C74B53700E35FE6 /* kronosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807ACA2C74B53700E35FE6 /* kronosUITests.swift */; };
 		72807ACD2C74B53700E35FE6 /* kronosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807ACC2C74B53700E35FE6 /* kronosUITestsLaunchTests.swift */; };
+		7287E3392C76384C0092CBD8 /* Admob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287E3382C76384C0092CBD8 /* Admob.swift */; };
+		8B17F2257971E118AC421461 /* Pods_kronos_kronosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303DDE4691557CB852DCBBD2 /* Pods_kronos_kronosUITests.framework */; };
+		BF88493ABE65F08DA8DC172A /* Pods_kronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B94DD4A73C53F604F316BE2 /* Pods_kronos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		303DDE4691557CB852DCBBD2 /* Pods_kronos_kronosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kronos_kronosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49103E7BD0396E7535D74803 /* Pods-kronos-kronosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kronos-kronosUITests.debug.xcconfig"; path = "Target Support Files/Pods-kronos-kronosUITests/Pods-kronos-kronosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55D5EC60B2366133394367AE /* Pods-kronosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kronosTests.debug.xcconfig"; path = "Target Support Files/Pods-kronosTests/Pods-kronosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B94DD4A73C53F604F316BE2 /* Pods_kronos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kronos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72807AAA2C74B53500E35FE6 /* kronos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kronos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72807AAD2C74B53500E35FE6 /* kronosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kronosApp.swift; sourceTree = "<group>"; };
 		72807AAF2C74B53500E35FE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +54,13 @@
 		72807AC62C74B53700E35FE6 /* kronosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kronosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72807ACA2C74B53700E35FE6 /* kronosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kronosUITests.swift; sourceTree = "<group>"; };
 		72807ACC2C74B53700E35FE6 /* kronosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kronosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7287E3352C7637160092CBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7287E3382C76384C0092CBD8 /* Admob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admob.swift; sourceTree = "<group>"; };
+		82655531A9620293B8DBE10B /* Pods-kronosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kronosTests.release.xcconfig"; path = "Target Support Files/Pods-kronosTests/Pods-kronosTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3157062BAE2CFA9B8033A64 /* Pods-kronos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kronos.release.xcconfig"; path = "Target Support Files/Pods-kronos/Pods-kronos.release.xcconfig"; sourceTree = "<group>"; };
+		EDC2601D8964529E0A926A6D /* Pods-kronos-kronosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kronos-kronosUITests.release.xcconfig"; path = "Target Support Files/Pods-kronos-kronosUITests/Pods-kronos-kronosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3D9E31801146F4EE6CA35AF /* Pods_kronosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kronosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66A2FDEA30072016F545A12 /* Pods-kronos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kronos.debug.xcconfig"; path = "Target Support Files/Pods-kronos/Pods-kronos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF88493ABE65F08DA8DC172A /* Pods_kronos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3272EEB68D0633CE47D95425 /* Pods_kronosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B17F2257971E118AC421461 /* Pods_kronos_kronosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0596AA1A3DCA6EE6E0181196 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B94DD4A73C53F604F316BE2 /* Pods_kronos.framework */,
+				303DDE4691557CB852DCBBD2 /* Pods_kronos_kronosUITests.framework */,
+				F3D9E31801146F4EE6CA35AF /* Pods_kronosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		72807AA12C74B53500E35FE6 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +108,8 @@
 				72807ABF2C74B53700E35FE6 /* kronosTests */,
 				72807AC92C74B53700E35FE6 /* kronosUITests */,
 				72807AAB2C74B53500E35FE6 /* Products */,
+				CC43E8AE555FB608EC9999C1 /* Pods */,
+				0596AA1A3DCA6EE6E0181196 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,11 +126,13 @@
 		72807AAC2C74B53500E35FE6 /* kronos */ = {
 			isa = PBXGroup;
 			children = (
+				7287E3352C7637160092CBD8 /* Info.plist */,
 				72807AAD2C74B53500E35FE6 /* kronosApp.swift */,
 				72807AAF2C74B53500E35FE6 /* ContentView.swift */,
 				72807AB12C74B53500E35FE6 /* Item.swift */,
 				72807AB32C74B53600E35FE6 /* Assets.xcassets */,
 				72807AB52C74B53600E35FE6 /* Preview Content */,
+				7287E3382C76384C0092CBD8 /* Admob.swift */,
 			);
 			path = kronos;
 			sourceTree = "<group>";
@@ -130,6 +162,19 @@
 			path = kronosUITests;
 			sourceTree = "<group>";
 		};
+		CC43E8AE555FB608EC9999C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F66A2FDEA30072016F545A12 /* Pods-kronos.debug.xcconfig */,
+				E3157062BAE2CFA9B8033A64 /* Pods-kronos.release.xcconfig */,
+				49103E7BD0396E7535D74803 /* Pods-kronos-kronosUITests.debug.xcconfig */,
+				EDC2601D8964529E0A926A6D /* Pods-kronos-kronosUITests.release.xcconfig */,
+				55D5EC60B2366133394367AE /* Pods-kronosTests.debug.xcconfig */,
+				82655531A9620293B8DBE10B /* Pods-kronosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72807AD02C74B53700E35FE6 /* Build configuration list for PBXNativeTarget "kronos" */;
 			buildPhases = (
+				BF45224EA5E29A4D1303653B /* [CP] Check Pods Manifest.lock */,
 				72807AA62C74B53500E35FE6 /* Sources */,
 				72807AA72C74B53500E35FE6 /* Frameworks */,
 				72807AA82C74B53500E35FE6 /* Resources */,
@@ -154,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72807AD32C74B53700E35FE6 /* Build configuration list for PBXNativeTarget "kronosTests" */;
 			buildPhases = (
+				87AA06CC73744227FC46555C /* [CP] Check Pods Manifest.lock */,
 				72807AB82C74B53700E35FE6 /* Sources */,
 				72807AB92C74B53700E35FE6 /* Frameworks */,
 				72807ABA2C74B53700E35FE6 /* Resources */,
@@ -172,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72807AD62C74B53700E35FE6 /* Build configuration list for PBXNativeTarget "kronosUITests" */;
 			buildPhases = (
+				7D9B28AD2A74B9E537E81CC5 /* [CP] Check Pods Manifest.lock */,
 				72807AC22C74B53700E35FE6 /* Sources */,
 				72807AC32C74B53700E35FE6 /* Frameworks */,
 				72807AC42C74B53700E35FE6 /* Resources */,
@@ -255,12 +303,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D9B28AD2A74B9E537E81CC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kronos-kronosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87AA06CC73744227FC46555C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kronosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF45224EA5E29A4D1303653B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kronos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72807AA62C74B53500E35FE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				72807AB02C74B53500E35FE6 /* ContentView.swift in Sources */,
+				7287E3392C76384C0092CBD8 /* Admob.swift in Sources */,
 				72807AB22C74B53500E35FE6 /* Item.swift in Sources */,
 				72807AAE2C74B53500E35FE6 /* kronosApp.swift in Sources */,
 			);
@@ -420,14 +538,18 @@
 		};
 		72807AD12C74B53700E35FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66A2FDEA30072016F545A12 /* Pods-kronos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kronos/Preview Content\"";
+				DEVELOPMENT_TEAM = SDCTHQR6AD;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kronos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,7 +560,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.0822;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -448,14 +570,18 @@
 		};
 		72807AD22C74B53700E35FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3157062BAE2CFA9B8033A64 /* Pods-kronos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kronos/Preview Content\"";
+				DEVELOPMENT_TEAM = SDCTHQR6AD;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kronos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,7 +592,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.0822;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -476,11 +602,13 @@
 		};
 		72807AD42C74B53700E35FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D5EC60B2366133394367AE /* Pods-kronosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -495,11 +623,13 @@
 		};
 		72807AD52C74B53700E35FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82655531A9620293B8DBE10B /* Pods-kronosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -514,10 +644,12 @@
 		};
 		72807AD72C74B53700E35FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49103E7BD0396E7535D74803 /* Pods-kronos-kronosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronosUITests;
@@ -531,10 +663,12 @@
 		};
 		72807AD82C74B53700E35FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC2601D8964529E0A926A6D /* Pods-kronos-kronosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronosUITests;
