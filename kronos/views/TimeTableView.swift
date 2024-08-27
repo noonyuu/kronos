@@ -1,5 +1,5 @@
 //
-//  TimeTable.swift
+//  TimeTableView.swift
 //  kronos
 //
 //  Created by shimizu on 2024/08/25
@@ -7,26 +7,26 @@
 
 import SwiftUI
 
-struct TimeTable: View {
+struct TimeTableView: View {
     @State private var selectedTab = 0
     let scheduleItems = [
-        ScheduleItem(hour: "05", time: "05:00", type: "普通", destination: "新開地"),
-        ScheduleItem(hour: "05", time: "05:20", type: "普通", destination: "新開地"),
-        ScheduleItem(hour: "06", time: "06:00", type: "急行", destination: "神戸三宮"),
-        ScheduleItem(hour: "06", time: "06:00", type: "急行", destination: "神戸三宮"),
-        ScheduleItem(hour: "06", time: "06:00", type: "急行", destination: "神戸三宮"),
-        ScheduleItem(hour: "06", time: "06:00", type: "急行", destination: "神戸三宮"),
-        ScheduleItem(hour: "06", time: "06:15", type: "普通", destination: "新開地")
+        ScheduleItem(hour: "05", time: "05:00", trainType: "普通", destination: "新開地"),
+        ScheduleItem(hour: "05", time: "05:20", trainType: "普通", destination: "新開地"),
+        ScheduleItem(hour: "06", time: "06:00", trainType: "急行", destination: "神戸三宮"),
+        ScheduleItem(hour: "06", time: "06:00", trainType: "急行", destination: "神戸三宮"),
+        ScheduleItem(hour: "06", time: "06:00", trainType: "急行", destination: "神戸三宮"),
+        ScheduleItem(hour: "06", time: "06:00", trainType: "急行", destination: "神戸三宮"),
+        ScheduleItem(hour: "06", time: "06:15", trainType: "普通", destination: "新開地")
     ]
     
     let holiday = [
-        ScheduleItem(hour: "07", time: "05:00", type: "普通", destination: "新開地"),
-        ScheduleItem(hour: "07", time: "05:20", type: "普通", destination: "新開地"),
-        ScheduleItem(hour: "07", time: "06:00", type: "急行", destination: "神戸三宮"),
-        ScheduleItem(hour: "08", time: "06:00", type: "急行", destination: "神戸三宮"),
-        ScheduleItem(hour: "08", time: "06:00", type: "急行", destination: "神戸三宮"),
-        ScheduleItem(hour: "09", time: "06:00", type: "急行", destination: "神戸三宮"),
-        ScheduleItem(hour: "09", time: "06:15", type: "普通", destination: "新開地")
+        ScheduleItem(hour: "07", time: "05:00", trainType: "普通", destination: "新開地"),
+        ScheduleItem(hour: "07", time: "05:20", trainType: "普通", destination: "新開地"),
+        ScheduleItem(hour: "07", time: "06:00", trainType: "急行", destination: "神戸三宮"),
+        ScheduleItem(hour: "08", time: "06:00", trainType: "急行", destination: "神戸三宮"),
+        ScheduleItem(hour: "08", time: "06:00", trainType: "急行", destination: "神戸三宮"),
+        ScheduleItem(hour: "09", time: "06:00", trainType: "急行", destination: "神戸三宮"),
+        ScheduleItem(hour: "09", time: "06:15", trainType: "普通", destination: "新開地")
     ]
     
     var body: some View {
@@ -120,7 +120,7 @@ struct TimeTable: View {
                                                     .font(.title)
                                                     .frame(maxWidth: 96, alignment: .leading)
                                                 VStack {
-                                                    Text(item.type)
+                                                    Text(item.trainType)
                                                         .padding(.vertical, 1)
                                                         .padding(.horizontal, 4)
                                                         .overlay(
@@ -175,7 +175,6 @@ struct TimeTable: View {
                 .map { (hour: $0.key, items: $0.value) }
                 .sorted { $0.hour < $1.hour }
         }
-       
     }
 }
 
@@ -183,10 +182,10 @@ struct ScheduleItem: Identifiable {
     var id = UUID()
     var hour: String
     var time: String
-    var type: String
+    var trainType: String
     var destination: String
 }
 
 #Preview {
-    TimeTable()
+    TimeTableView()
 }
