@@ -15,18 +15,17 @@ struct TableViewPopUp: View {
     @State private var selectedMonth = 0
     @State private var selectedDay = 0
     
-    @State private var selectedValues: [String: Bool] = [:]
-    
+    @State private var selectedItems: Set<UUID> = []
     @State var persons: [Types] = [
-           Types(name: "Grace"),
-           Types(name: "普通"),
-           Types(name: "特急"),
-           Types(name: "準急"),
-           Types(name: "普通"),
-           Types(name: "Frank"),
-           Types(name: "Grace"),
-           Types(name: "Hank")
-       ]
+        Types(name: "Grace"),
+        Types(name: "普通"),
+        Types(name: "特急"),
+        Types(name: "準急"),
+        Types(name: "普通"),
+        Types(name: "Frank"),
+        Types(name: "Grace"),
+        Types(name: "Hank")
+    ]
     let months = Calendar.current.monthSymbols
     
     var currentYear: Int {
@@ -134,26 +133,32 @@ struct TableViewPopUp: View {
             .padding(.leading, 10)
             Divider()
             HStack {
-                                VStack{
-                                    Text("種別")
-                                        .foregroundColor(.gray)
-                                        .fontWeight(.bold)
-                                        .font(.title3)
-                                        .frame(width: 80)
-                                        .padding(.vertical)
-                                    VStack {
-//                                        List(selection: $selectedValue) {
-//                                            ForEach(people, id: \.self) { person in
-//                                                Text("\(person.name) : \(person.age)")
-//                                            }
-//                                        }
-//                                        .environment(\.editMode, .constant(.active))
-                                    }
-                
-                                    .pickerStyle(.wheel)
-                                    .frame(width: 300,height: 200)
-                                    .padding(.leading, 8)
+                VStack {
+                    Text("種別")
+                        .foregroundColor(.gray)
+                        .fontWeight(.bold)
+                        .font(.title3)
+                        .frame(maxWidth: .infinity, alignment:.leading)
+                        .padding(.leading, 16)
+                    
+                    VStack {
+                        ForEach(items) { item in
+                            HStack {
+                                Button(action: {
+                                    toggleSelection(for: item.id)
+                                }) {
+                                    Image(systemName: selectedItems.contains(item.id) ? "checkmark.circle.fill" : "checkmark.circle")
+                                        .foregroundColor(selectedItems.contains(item.id) ? .blue : .gray)
                                 }
+                                Text("\(item.destination)")
+                            }
+                            .frame(maxWidth: .infinity, alignment:.leading)
+                            .padding(.leading)
+                        }
+                    }
+                    .frame(maxHeight: 150, alignment: .topLeading)
+                }
+                .frame(height: 150)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 8)
@@ -165,12 +170,22 @@ struct TableViewPopUp: View {
                 //                .font(.title)
                 //                .padding()
             }
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(.blue)
+            .foregroundColor(.white)
+            .fontWeight(.bold)
+            .font(.title2).padding(.horizontal)
+            .cornerRadius(150)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 24)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 20)
+        .onAppear {
+            removeDuplicates()
+        }
     }
     
     private func adjustDaySelection() {
@@ -190,6 +205,20 @@ struct TableViewPopUp: View {
         Dictionary(grouping: items, by: { $0.hour })
             .map { (hour: $0.key, items: $0.value) }
             .sorted { $0.hour < $1.hour }
+    }
+    // 重複を排除する関数
+    private func removeDuplicates() {
+        items = Array(
+            Dictionary(grouping: items, by: { $0.destination })
+                .compactMap { $0.value.first }
+        )
+    }
+    private func toggleSelection(for id: UUID) {
+        if selectedItems.contains(id) {
+            selectedItems.remove(id)
+        } else {
+            selectedItems.insert(id)
+        }
     }
 }
 
