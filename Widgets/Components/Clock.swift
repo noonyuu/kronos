@@ -24,13 +24,14 @@ struct Clock: View {
     }
     
     struct ClockNumbers: View {
+        @Environment(\.colorScheme) var colorScheme: ColorScheme
         var timeTables: [TrainTime]
         
         var body: some View {
             ForEach(0..<12) { number in
                 let minuteMark = (number + 1) % 12 * 5
                 let matchingTimeTable = timeTables.first { Calendar.current.component(.minute, from: $0.departureTime) == minuteMark }
-                let color = matchingTimeTable?.displayColor ?? .black
+                let color = matchingTimeTable?.displayColor ?? (colorScheme == .dark ? .white : .black)
 
                 Text(String(number + 1))
                     .font(.callout)
@@ -45,12 +46,13 @@ struct Clock: View {
     }
     
     struct ClockDots: View {
+        @Environment(\.colorScheme) var colorScheme: ColorScheme
         var timeTables: [TrainTime]
         
         var body: some View {
             ForEach(0..<60) { number in
                 let matchingTimeTable = timeTables.first { Calendar.current.component(.minute, from: $0.departureTime) == number }
-                let color = matchingTimeTable?.displayColor ?? .black
+                let color = matchingTimeTable?.displayColor ?? (colorScheme == .dark ? .white : .black)
 
                 Rectangle()
                     .frame(width: 2, height: 2)
