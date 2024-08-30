@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37627D252C810C7C00AFB145 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37627D242C810C7C00AFB145 /* WidgetKit.framework */; };
+		37627D272C810C7C00AFB145 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37627D262C810C7C00AFB145 /* SwiftUI.framework */; };
+		37627D2A2C810C7C00AFB145 /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37627D292C810C7C00AFB145 /* WidgetsBundle.swift */; };
+		37627D2C2C810C7C00AFB145 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37627D2B2C810C7C00AFB145 /* Widgets.swift */; };
+		37627D2E2C810C7D00AFB145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37627D2D2C810C7D00AFB145 /* Assets.xcassets */; };
+		37627D322C810C7E00AFB145 /* WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 37627D222C810C7C00AFB145 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37627D3B2C8115C800AFB145 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37627D392C81159A00AFB145 /* Clock.swift */; };
 		72807AAE2C74B53500E35FE6 /* kronosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807AAD2C74B53500E35FE6 /* kronosApp.swift */; };
 		72807AB02C74B53500E35FE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807AAF2C74B53500E35FE6 /* ContentView.swift */; };
 		72807AB22C74B53500E35FE6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72807AB12C74B53500E35FE6 /* Item.swift */; };
@@ -18,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		37627D302C810C7E00AFB145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72807AA22C74B53500E35FE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37627D212C810C7C00AFB145;
+			remoteInfo = WidgetsExtension;
+		};
 		72807ABD2C74B53700E35FE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 72807AA22C74B53500E35FE6 /* Project object */;
@@ -34,7 +48,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		37627D362C810C7E00AFB145 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				37627D322C810C7E00AFB145 /* WidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		37627D222C810C7C00AFB145 /* WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		37627D242C810C7C00AFB145 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		37627D262C810C7C00AFB145 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		37627D292C810C7C00AFB145 /* WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsBundle.swift; sourceTree = "<group>"; };
+		37627D2B2C810C7C00AFB145 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		37627D2D2C810C7D00AFB145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37627D2F2C810C7D00AFB145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37627D392C81159A00AFB145 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		72807AAA2C74B53500E35FE6 /* kronos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kronos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72807AAD2C74B53500E35FE6 /* kronosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kronosApp.swift; sourceTree = "<group>"; };
 		72807AAF2C74B53500E35FE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +85,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		37627D1F2C810C7C00AFB145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37627D272C810C7C00AFB145 /* SwiftUI.framework in Frameworks */,
+				37627D252C810C7C00AFB145 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72807AA72C74B53500E35FE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,12 +118,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37627D232C810C7C00AFB145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37627D242C810C7C00AFB145 /* WidgetKit.framework */,
+				37627D262C810C7C00AFB145 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37627D282C810C7C00AFB145 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				37627D382C81158800AFB145 /* Components */,
+				37627D292C810C7C00AFB145 /* WidgetsBundle.swift */,
+				37627D2B2C810C7C00AFB145 /* Widgets.swift */,
+				37627D2D2C810C7D00AFB145 /* Assets.xcassets */,
+				37627D2F2C810C7D00AFB145 /* Info.plist */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		37627D382C81158800AFB145 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				37627D392C81159A00AFB145 /* Clock.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		72807AA12C74B53500E35FE6 = {
 			isa = PBXGroup;
 			children = (
 				72807AAC2C74B53500E35FE6 /* kronos */,
 				72807ABF2C74B53700E35FE6 /* kronosTests */,
 				72807AC92C74B53700E35FE6 /* kronosUITests */,
+				37627D282C810C7C00AFB145 /* Widgets */,
+				37627D232C810C7C00AFB145 /* Frameworks */,
 				72807AAB2C74B53500E35FE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +165,7 @@
 				72807AAA2C74B53500E35FE6 /* kronos.app */,
 				72807ABC2C74B53700E35FE6 /* kronosTests.xctest */,
 				72807AC62C74B53700E35FE6 /* kronosUITests.xctest */,
+				37627D222C810C7C00AFB145 /* WidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +210,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		37627D212C810C7C00AFB145 /* WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37627D332C810C7E00AFB145 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */;
+			buildPhases = (
+				37627D1E2C810C7C00AFB145 /* Sources */,
+				37627D1F2C810C7C00AFB145 /* Frameworks */,
+				37627D202C810C7C00AFB145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetsExtension;
+			productName = WidgetsExtension;
+			productReference = 37627D222C810C7C00AFB145 /* WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		72807AA92C74B53500E35FE6 /* kronos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72807AD02C74B53700E35FE6 /* Build configuration list for PBXNativeTarget "kronos" */;
@@ -140,10 +234,12 @@
 				72807AA62C74B53500E35FE6 /* Sources */,
 				72807AA72C74B53500E35FE6 /* Frameworks */,
 				72807AA82C74B53500E35FE6 /* Resources */,
+				37627D362C810C7E00AFB145 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				37627D312C810C7E00AFB145 /* PBXTargetDependency */,
 			);
 			name = kronos;
 			productName = kronos;
@@ -196,6 +292,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					37627D212C810C7C00AFB145 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					72807AA92C74B53500E35FE6 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -225,11 +324,20 @@
 				72807AA92C74B53500E35FE6 /* kronos */,
 				72807ABB2C74B53700E35FE6 /* kronosTests */,
 				72807AC52C74B53700E35FE6 /* kronosUITests */,
+				37627D212C810C7C00AFB145 /* WidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		37627D202C810C7C00AFB145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37627D2E2C810C7D00AFB145 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72807AA82C74B53500E35FE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +364,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		37627D1E2C810C7C00AFB145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37627D3B2C8115C800AFB145 /* Clock.swift in Sources */,
+				37627D2A2C810C7C00AFB145 /* WidgetsBundle.swift in Sources */,
+				37627D2C2C810C7C00AFB145 /* Widgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72807AA62C74B53500E35FE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +404,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		37627D312C810C7E00AFB145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37627D212C810C7C00AFB145 /* WidgetsExtension */;
+			targetProxy = 37627D302C810C7E00AFB145 /* PBXContainerItemProxy */;
+		};
 		72807ABE2C74B53700E35FE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 72807AA92C74B53500E35FE6 /* kronos */;
@@ -299,6 +422,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		37627D342C810C7E00AFB145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6R7SM63VX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kronos-ken.kronos.Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37627D352C810C7E00AFB145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6R7SM63VX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kronos-ken.kronos.Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		72807ACE2C74B53700E35FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -421,12 +598,13 @@
 		72807AD12C74B53700E35FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kronos/Preview Content\"";
-				DEVELOPMENT_TEAM = SDCTHQR6AD;
+				DEVELOPMENT_TEAM = L6R7SM63VX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -440,7 +618,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronos;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kronos-ken.kronos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,12 +629,13 @@
 		72807AD22C74B53700E35FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kronos/Preview Content\"";
-				DEVELOPMENT_TEAM = SDCTHQR6AD;
+				DEVELOPMENT_TEAM = L6R7SM63VX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -470,7 +649,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronos;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kronos-ken.kronos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -485,10 +664,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6R7SM63VX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronosTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kronos-ken.kronosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -504,10 +684,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6R7SM63VX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronosTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kronos-ken.kronosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -522,6 +703,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6R7SM63VX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronosUITests;
@@ -539,6 +721,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6R7SM63VX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kronos.kronosUITests;
@@ -553,6 +736,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		37627D332C810C7E00AFB145 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37627D342C810C7E00AFB145 /* Debug */,
+				37627D352C810C7E00AFB145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		72807AA52C74B53500E35FE6 /* Build configuration list for PBXProject "kronos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
